@@ -3,7 +3,7 @@ import bg from '../../Images/wave.svg'
 
 export const Homepage = styled.div`
   width: 100%;
-  height: 500px;
+  height: 600px;
   min-height: auto;
   max-height: auto;
   margin: 0 auto;
@@ -42,7 +42,7 @@ export const ButtonContainer = styled.div`
  max-width:600px;
  
 `
-export const Button1 = styled.button`
+export const CusrtomButton = styled.button`
   height: 44px;
   width: 180px;
   margin: 10px;
@@ -59,11 +59,11 @@ export const Button1 = styled.button`
   border-radius: 10px;
   &:hover {
     background-color: #fff;
-    color:#000000;
-    text-decoration:none;
-    transform:none;
-    transition:all 0.2s ease 0s;
-    outline: rgb(255,255,255) dashed 5px;
+    color: #000000;
+    text-decoration: none;
+    transform: none;
+    transition: all 0.2s ease 0s;
+    outline: rgb(255, 255, 255) dashed 5px;
     box-sizing: border-box;
     border-top-left: 5px;
   }
