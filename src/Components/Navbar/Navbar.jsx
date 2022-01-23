@@ -23,13 +23,51 @@ function Navbar() {
   //   setonClick(!open)
   // }
   
-  return <div>
-    <nav className={styles.Navbar} >
-      <Link to="/" >
-        <div className={styles.Navbar_logo} />
-      </Link>
-    </nav>  
-  </div>;
+  return (
+    <div>
+      <nav className={styles.Navbar}>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <div>
+            <h1 className={styles.Navbar_logo}>Defun</h1>
+          </div>
+        </Link>
+        <ul
+          className={styles.NavbarElementsContainer}
+        >
+          <p className={styles.NavbarPages}>
+            <Link
+              to="/"
+              className={styles.NavbarPagesLink}
+              style={{ textDecoration: "none" }}
+            >
+              {" "}
+              Home{" "}
+            </Link>
+          </p>
+          <p className={styles.NavbarPages}>
+            <Link
+              to="/Explore"
+              className={styles.NavbarPagesLink}
+              style={{ textDecoration: "none" }}
+            >
+              {" "}
+              Explore{" "}
+            </Link>
+          </p>
+          <p className={styles.NavbarPages}>
+            <Link
+              to="/Generator"
+              className={styles.NavbarPagesLink}
+              style={{ textDecoration: "none" }}
+            >
+              {" "}
+              Create{" "}
+            </Link>
+          </p>
+        </ul>
+      </nav>
+    </div>
+  );
 }
 
 export default Navbar;
